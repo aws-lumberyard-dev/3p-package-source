@@ -1,6 +1,6 @@
-diff -N -a -u -r benchmark-1.5.0.orig/src/benchmark.cc benchmark-1.5.0/src/benchmark.cc
---- benchmark-1.5.0.orig/src/benchmark.cc	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/benchmark.cc	2020-10-14 22:05:36.383669200 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/benchmark.cc benchmark-1.7.0/src/benchmark.cc
+--- benchmark-1.7.0.orig/src/benchmark.cc	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/benchmark.cc	2020-10-14 22:05:36.383669200 -0500
 @@ -18,7 +18,7 @@
  #include "internal_macros.h"
  
@@ -10,9 +10,9 @@ diff -N -a -u -r benchmark-1.5.0.orig/src/benchmark.cc benchmark-1.5.0/src/bench
  #include <sys/resource.h>
  #endif
  #include <sys/time.h>
-diff -N -a -u -r benchmark-1.5.0.orig/src/benchmark_register.cc benchmark-1.5.0/src/benchmark_register.cc
---- benchmark-1.5.0.orig/src/benchmark_register.cc	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/benchmark_register.cc	2020-10-14 22:06:56.901076900 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/benchmark_register.cc benchmark-1.7.0/src/benchmark_register.cc
+--- benchmark-1.7.0.orig/src/benchmark_register.cc	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/benchmark_register.cc	2020-10-14 22:06:56.901076900 -0500
 @@ -15,7 +15,7 @@
  #include "benchmark_register.h"
  
@@ -22,9 +22,9 @@ diff -N -a -u -r benchmark-1.5.0.orig/src/benchmark_register.cc benchmark-1.5.0/
  #include <sys/resource.h>
  #endif
  #include <sys/time.h>
-diff -N -a -u -r benchmark-1.5.0.orig/src/benchmark_runner.cc benchmark-1.5.0/src/benchmark_runner.cc
---- benchmark-1.5.0.orig/src/benchmark_runner.cc	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/benchmark_runner.cc	2020-10-14 22:07:01.282622200 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/benchmark_runner.cc benchmark-1.7.0/src/benchmark_runner.cc
+--- benchmark-1.7.0.orig/src/benchmark_runner.cc	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/benchmark_runner.cc	2020-10-14 22:07:01.282622200 -0500
 @@ -18,7 +18,7 @@
  #include "internal_macros.h"
  
@@ -34,9 +34,9 @@ diff -N -a -u -r benchmark-1.5.0.orig/src/benchmark_runner.cc benchmark-1.5.0/sr
  #include <sys/resource.h>
  #endif
  #include <sys/time.h>
-diff -N -a -u -r benchmark-1.5.0.orig/src/colorprint.cc benchmark-1.5.0/src/colorprint.cc
---- benchmark-1.5.0.orig/src/colorprint.cc	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/colorprint.cc	2020-10-14 22:07:43.727853800 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/colorprint.cc benchmark-1.7.0/src/colorprint.cc
+--- benchmark-1.7.0.orig/src/colorprint.cc	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/colorprint.cc	2020-10-14 22:07:43.727853800 -0500
 @@ -33,14 +33,14 @@
  
  namespace benchmark {
@@ -63,9 +63,9 @@ diff -N -a -u -r benchmark-1.5.0.orig/src/colorprint.cc benchmark-1.5.0/src/colo
    ((void)out);  // suppress unused warning
  
    const HANDLE stdout_handle = GetStdHandle(STD_OUTPUT_HANDLE);
-diff -N -a -u -r benchmark-1.5.0.orig/src/commandlineflags.cc benchmark-1.5.0/src/commandlineflags.cc
---- benchmark-1.5.0.orig/src/commandlineflags.cc	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/commandlineflags.cc	2020-10-14 22:09:39.353104100 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/commandlineflags.cc benchmark-1.7.0/src/commandlineflags.cc
+--- benchmark-1.7.0.orig/src/commandlineflags.cc	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/commandlineflags.cc	2020-10-14 22:09:39.353104100 -0500
 @@ -13,7 +13,7 @@
  // limitations under the License.
  
@@ -75,9 +75,9 @@ diff -N -a -u -r benchmark-1.5.0.orig/src/commandlineflags.cc benchmark-1.5.0/sr
  #include <cctype>
  #include <cstdlib>
  #include <cstring>
-diff -N -a -u -r benchmark-1.5.0.orig/src/internal_macros.h benchmark-1.5.0/src/internal_macros.h
---- benchmark-1.5.0.orig/src/internal_macros.h	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/internal_macros.h	2020-10-14 22:09:41.520871700 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/internal_macros.h benchmark-1.7.0/src/internal_macros.h
+--- benchmark-1.7.0.orig/src/internal_macros.h	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/internal_macros.h	2020-10-14 22:09:41.520871700 -0500
 @@ -89,6 +89,17 @@
    #define BENCHMARK_MAYBE_UNUSED
  #endif
@@ -96,9 +96,9 @@ diff -N -a -u -r benchmark-1.5.0.orig/src/internal_macros.h benchmark-1.5.0/src/
  // clang-format on
  
  #endif  // BENCHMARK_INTERNAL_MACROS_H_
-diff -N -a -u -r benchmark-1.5.0.orig/src/sysinfo.cc benchmark-1.5.0/src/sysinfo.cc
---- benchmark-1.5.0.orig/src/sysinfo.cc	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/sysinfo.cc	2020-10-14 22:56:44.702431200 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/sysinfo.cc benchmark-1.7.0/src/sysinfo.cc
+--- benchmark-1.7.0.orig/src/sysinfo.cc	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/sysinfo.cc	2020-10-14 22:56:44.702431200 -0500
 @@ -22,14 +22,14 @@
  #include <codecvt>
  #else
@@ -184,9 +184,9 @@ diff -N -a -u -r benchmark-1.5.0.orig/src/sysinfo.cc benchmark-1.5.0/src/sysinfo
    constexpr int kMaxSamples = 3;
    std::vector<double> res(kMaxSamples, 0.0);
    const int nelem = getloadavg(res.data(), kMaxSamples);
-diff -N -a -u -r benchmark-1.5.0.orig/src/timers.cc benchmark-1.5.0/src/timers.cc
---- benchmark-1.5.0.orig/src/timers.cc	2019-05-13 14:42:18.000000000 -0500
-+++ benchmark-1.5.0/src/timers.cc	2020-10-14 22:19:18.569818000 -0500
+diff -N -a -u -r benchmark-1.7.0.orig/src/timers.cc benchmark-1.7.0/src/timers.cc
+--- benchmark-1.7.0.orig/src/timers.cc	2019-05-13 14:42:18.000000000 -0500
++++ benchmark-1.7.0/src/timers.cc	2020-10-14 22:19:18.569818000 -0500
 @@ -22,13 +22,13 @@
  #include <windows.h>
  #else
