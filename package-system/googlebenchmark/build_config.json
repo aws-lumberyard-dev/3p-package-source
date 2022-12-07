@@ -81,7 +81,8 @@
             ],
             "custom_additional_libraries":[
                
-            ]
+            ],
+            "package_version":"1.7.0-rev2"
          }
       },
       "Darwin":{
